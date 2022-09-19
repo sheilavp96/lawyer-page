@@ -4,9 +4,21 @@ export const useStyles = makeStyles({
   title: {
     color: "red",
   },
-  "home-container": {
-    background: "red",
+  containerHome: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    gap: 20,
     width: "100%",
-    height: "calc(100% - 10px)",
+    height: "80vh",
+  },
+  perfilImg: {
+    width: "350px",
+  },
+  image: {
+    borderRadius: "50%",
+  },
+  text: {
+    textAlign: "center",
   },
 });
