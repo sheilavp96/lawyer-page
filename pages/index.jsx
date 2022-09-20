@@ -24,7 +24,7 @@ export default function HomePage() {
           >
             Marcela Irene Pérez Mendez
           </Typography>
-          <p> Licenciada en derecho penal</p>
+          <Typography> Licenciada en derecho penal</Typography>
         </div>
       </div>
     </MainLayout>

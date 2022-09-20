@@ -1,8 +1,8 @@
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 import React from "react";
 import ActiveLink from "../activeLink/ActiveLink";
-import styles from "./navbar.module.css";
 import { useStyles } from "./styles";
+import styles from "./navbar.module.css";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -11,11 +11,11 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <Box style={{ display: "flex" }}>
-      <AppBar className={classes.appbar}>
+      <AppBar className={styles.navbar}>
         <Toolbar>
           <Typography
             variant="h6"
