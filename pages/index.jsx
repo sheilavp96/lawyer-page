@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MainLayout from "../components/layouts/MainLayout";
-import perfil from "../assets/mia.png";
+import perfil from "../assets/perfil.jpg";
 import { useStyles } from "./styles";
 import Image from "next/image";
 import { Typography } from "@mui/material";
@@ -15,16 +15,21 @@ export default function HomePage() {
           <Image src={perfil} className={classes.image} />
         </div>
 
-        <div className={classes.text}>
+        <div className={classes.textContainer}>
           <Typography
-            variant="h5"
+            variant="h4"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             className={classes.title}
           >
             Marcela Irene Pérez Mendez
           </Typography>
-          <Typography> Licenciada en derecho penal</Typography>
+          <Typography variant="h6"> Licenciada en derecho penal</Typography>
+          <Typography variant="h8">
+            {" "}
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cum magnam
+            odio debitis aperiam perspiciatis error porro consequuntur.
+          </Typography>
         </div>
       </div>
     </MainLayout>

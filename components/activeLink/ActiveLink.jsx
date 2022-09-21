@@ -1,15 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useStyles } from "./styles";
+import styles from "./activelink.module.css";
 
 const ActiveLink = ({ text, href }) => {
   const { asPath } = useRouter();
-  const classes = useStyles();
-
   return (
     <Link href={href}>
-      <a className={asPath === href ? classes.href : classes.text}>{text}</a>
+      <a className={asPath === href ? styles.href : styles.text}>{text}</a>
     </Link>
   );
 };

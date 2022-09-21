@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles({
   title: {
-    color: "red",
+    color: "#000000",
   },
   containerHome: {
     display: "flex",
@@ -13,12 +13,14 @@ export const useStyles = makeStyles({
     height: "80vh",
   },
   perfilImg: {
-    width: "350px",
+    width: "370px",
   },
   image: {
     borderRadius: "50%",
+    height: "370px",
   },
-  text: {
+  textContainer: {
+    width: "50%",
     textAlign: "center",
   },
 });

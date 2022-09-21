@@ -1,0 +1,10 @@
+.href {
+  color: #000000;
+  text-decoration: underline;
+  margin-right: 15px;
+}
+.text {
+  color: #000000;
+  margin-right: 15px;
+  text-decoration: none;
+}

@@ -2,5 +2,12 @@
   margin-right: 10px;
 }
 .navbar {
-  background: #2b2d42;
+  background: #ffffff;
+  color: black;
+}
+.containerHome {
+  display: flex;
+}
+.perfilImg {
+  outline: 2px solid red;
 }

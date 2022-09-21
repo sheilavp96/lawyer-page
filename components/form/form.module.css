@@ -1,0 +1,25 @@
+.container {
+  /* outline: 2px solid green; */
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.formContainer {
+  /* outline: 2px solid red; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.formInputs {
+  outline: 2px solid blue;
+}
+.imgContainer {
+  width: 360px;
+}
+.img {
+  border-radius: 15px;
+}

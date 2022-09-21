@@ -1,13 +1,12 @@
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 import React from "react";
 import ActiveLink from "../activeLink/ActiveLink";
-import { useStyles } from "./styles";
 import styles from "./navbar.module.css";
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "HOME", href: "/" },
+  // { name: "ABOUT", href: "/about" },
+  { name: "CONTACT", href: "/contact" },
 ];
 
 const Navbar = () => {
