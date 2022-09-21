@@ -10,7 +10,11 @@ import {
 import styles from "./form.module.css";
 import lady from "../../assets/lady1.jpg";
 import Image from "next/image";
+import axios from "axios";
+
 const Form = () => {
+  let url = process.env.REACT_APP_API_URL;
+  console.log(url);
   const [open, setOpen] = useState(false);
   const [contactInfo, setContactInfo] = useState({
     name: "",
@@ -27,7 +31,37 @@ const Form = () => {
   };
 
   const handleSendMessage = () => {
-    setOpen(true);
+    console.log(name, lastName, email, issue, message);
+    // setOpen(true);
+    //destinatary_email
+    //topic
+    //main_messague
+    const formData = new FormData();
+    formData.append("destinatary_email", email);
+    formData.append("topic", issue);
+    formData.append("main_messague", message);
+
+    axios({
+      method: "post",
+      url: `https://192.168.1.254:8000/message/first-comunication`,
+      data: formData,
+    })
+      .then((res) => {
+        console.log(res);
+        // if (res.data.user_info.is_admin) {
+        //   let nameUser = res.data.user_info.name;
+        //   navigate(`/profile-admin/${nameUser}`);
+        // } else {
+        //   navigate(`/profile-user`);
+        // }
+
+        //     //
+      })
+      .catch((error) => {
+        // setError(true);
+        console.log(error);
+      })
+      .finally(console.log("Termino"));
   };
 
   useEffect(() => {
