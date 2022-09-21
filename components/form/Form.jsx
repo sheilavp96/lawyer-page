@@ -13,8 +13,6 @@ import Image from "next/image";
 import axios from "axios";
 
 const Form = () => {
-  let url = process.env.REACT_APP_API_URL;
-  console.log(url);
   const [open, setOpen] = useState(false);
   const [contactInfo, setContactInfo] = useState({
     name: "",

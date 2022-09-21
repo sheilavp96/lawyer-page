@@ -1,7 +1,7 @@
 import Link from "next/link";
 import MainLayout from "../components/layouts/MainLayout";
 import perfil from "../assets/perfil.jpg";
-import { useStyles } from "./styles";
+import { useStyles } from "../components/styles/styles";
 import Image from "next/image";
 import { Typography } from "@mui/material";
 
