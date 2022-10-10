@@ -4,9 +4,9 @@ import ActiveLink from "../activeLink/ActiveLink";
 import styles from "./navbar.module.css";
 
 const navItems = [
-  { name: "HOME", href: "/" },
-  // { name: "ABOUT", href: "/about" },
-  { name: "CONTACT", href: "/contact" },
+  { name: "INICIO", href: "/" },
+  { name: "SERVICIOS", href: "/service" },
+  { name: "CONTACTO", href: "/contact" },
 ];
 
 const Navbar = () => {

@@ -23,4 +23,18 @@ export const useStyles = makeStyles({
     width: "50%",
     textAlign: "center",
   },
+
+  //services styles
+  servicesImgDiv: {
+    outline: "2px solid red",
+    position: "relative",
+  },
+  serviceImg: {},
+  servicesTitle: {
+    outline: "2px solid blue",
+
+    position: "absolute",
+    top: 0,
+    right: 0,
+  },
 });
